@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 36,
-    color: "#38434D",
+    color: "#38434D", //
   },
 });
