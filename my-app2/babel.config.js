@@ -11,6 +11,7 @@ module.exports = function (api) {
           },
         },
       ],
+      "react-native-web",
     ],
     presets: ["babel-preset-expo"],
   };
