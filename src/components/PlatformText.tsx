@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Platform, Text } from "react-native";
 
-const PatformText = memo(() => {
+const PlatformText = memo(() => {
   let text = "";
   const platform = Platform.OS;
 
@@ -26,7 +26,11 @@ const PatformText = memo(() => {
       throw new Error(`Unhandled color case: ${exhaustiveCheck}`);
   }
 
-  return <Text style={{ fontSize: 50 }}>{text}</Text>;
+  return (
+    <Text style={{ fontSize: 35 }}>
+      Platform: <Text style={{ color: "green" }}>{text}</Text>
+    </Text>
+  );
 });
 
-export default PatformText;
+export default PlatformText;
